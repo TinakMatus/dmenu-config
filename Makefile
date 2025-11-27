@@ -22,10 +22,9 @@ dmenu: dmenu.o drw.o util.o
 stest: stest.o
 	$(CC) -o $@ stest.o $(LDFLAGS)
 
+
 clean:
-	rm -f dmenu stest dmenu_path dmenu_run \
-		$(OBJ) dmenu-$(VERSION).tar.gz *.orig \
-		dmenu.1 stest.1
+	rm -f dmenu stest $(OBJ) dmenu-$(VERSION).tar.gz *.orig *.rej *.gch
 
 
 install: all
