@@ -1,24 +1,23 @@
-dmenu - dynamic menu
-====================
-dmenu is an efficient dynamic menu for X.
+## dmenu - Dynamic Menu
 
+This is my personal build of dmenu. I use it as a fast lightweight launcher for everything on my system from opening apps to running custom scripts for screenshots or WiFi.
 
-Requirements
-------------
-In order to build dmenu you need the Xlib header files.
+# How it works
 
+I didn't want a heavy "Start Menu" or search bar. Instead I use dmenu because it's just a simple and it stays out of the way until I need it.
 
-Installation
-------------
-Edit config.mk to match your local setup (dmenu is installed into
-the /usr/local namespace by default).
+* The Code: I patched the C source to keep it as lightweight as possible while adding support for modern features like fuzzy searching.
 
-Afterwards enter the following command to build and install dmenu
-(if necessary as root):
+* The Logic: While it reads my $PATHs to launch standard apps its real power is that I can pipe any custom text or scripts into it.
 
-    make clean install
+* The Result: A launcher that uses almost zero resources and allows me to trigger any script or app on my PC.
 
+# My Applied Patches
 
-Running dmenu
--------------
-See the man page for details.
+I added these specific patches to make it more usable:
+
+* [**center**](https://dmenu.suckless.org/patches/center/) - Moves the menu to the middle of the screen instead of a tiny bar at the top.
+* [**fuzzymatch**](https://dmenu.suckless.org/patches/fuzzymatch/) - I don't have to type the exact name of an app.
+* [**xresources**](https://dmenu.suckless.org/patches/xresources/) - Automatically syncs the menu colors with my wallpaper theme.
+
+"Simple, fast, and stays out of the way."
