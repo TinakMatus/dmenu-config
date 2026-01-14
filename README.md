@@ -4,7 +4,7 @@ This is my personal build of dmenu. I use it as a fast lightweight launcher for 
 
 # How it works
 
-I didn't want a heavy "Start Menu" or search bar. Instead I use dmenu because it's just a simple and it stays out of the way until I need it.
+I didnt want a heavy "Start Menu" or search bar. Instead I use dmenu because it is just a simple and it stays out of the way until I need it.
 
 * The Code: I patched the C source to keep it as lightweight as possible while adding support for modern features like fuzzy searching.
 
@@ -17,7 +17,7 @@ I didn't want a heavy "Start Menu" or search bar. Instead I use dmenu because it
 I added these specific patches to make it more usable:
 
 * [**center**](https://dmenu.suckless.org/patches/center/) - Moves the menu to the middle of the screen instead of a tiny bar at the top.
-* [**fuzzymatch**](https://dmenu.suckless.org/patches/fuzzymatch/) - I don't have to type the exact name of an app.
+* [**fuzzymatch**](https://dmenu.suckless.org/patches/fuzzymatch/) - I dont have to type the exact name of an app.
 * [**xresources**](https://dmenu.suckless.org/patches/xresources/) - Automatically syncs the menu colors with my wallpaper theme.
 
 "Simple, fast, and stays out of the way."
