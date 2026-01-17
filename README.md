@@ -8,7 +8,7 @@ I didnt want a heavy "Start Menu" or search bar. Instead I use dmenu because it 
 
 * The Code: I patched the C source to keep it as lightweight as possible while adding support for modern features like fuzzy searching.
 
-* The Logic: While it reads my $PATHs to launch standard apps its real power is that I can pipe any custom text or scripts into it.
+* The Logic: While it reads my $PATH to launch standard apps its real power is that I can pipe any custom text or scripts into it.
 
 * The Result: A launcher that uses almost zero resources and allows me to trigger any script or app on my PC.
 
